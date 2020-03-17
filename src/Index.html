@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="assets/css/landpage.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/csshake.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <title> title </title>
+</head>
+<body> 
+    <nav id="home">
+        <div class="toggle">
+            <img id="svgToggle" src="assets/icons/ico-hmbgr.svg" class="hmbgr-icon" alt="hmbgr-icon" />
+        </div>
+        <ul>
+            <a href="#home">HOME</a>
+            <a href="#Concept">CONCEITO</a>
+            <a href="#Project">PROJETO</a>
+            <a href="#video">VIDEO</a>
+            <a>LOCALIZAÇÃO</a>
+            <a>CONTATO</a>
+        </ul>
+        <div class="contato">
+            <p>119999.9999 <img src="assets/icons/ico-phone.svg" class="comment-icon" alt="comment-icon" /></p> 
+        </div>   
+    </nav>
+    <div class="mobile"></div>
+
+    <div class="firstContent">
+
+        <img class="webdoor" src="assets/Images/webdoor-desktop.jpg"  alt="webdoor" />
+        <h1 class="titleWebDoor"> LOREM IPSUM<br>
+            DOLOR SIT AMET,<br>
+            CONSECTETUR<br>
+            ADIPSCINGELIT. </h1>
+       <a href="#Concept"><button class="arrowDown hvr-grow"><img src="assets/icons/ico-arrow-2.svg" class="arrow-down-icon" alt="arrow-down-icon" /></button></a>
+    </div>
+    
+    <div id="Concept" class="Concept">
+        <div class="wrapper">
+            <div class="board">
+                <h2> CONCEITO </h2>
+                <div class="contentCard">
+                    <span> LOREMIPSUM<br>
+                        DOLOR SITA MET,<br>
+                        CONSECTETUR<br>
+                        A DIPISCIELIT.
+                    </span>
+                    <p>
+                        Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer
+                        condimentum, dolor porta alique consequat, lacus purus scelerisque
+                        arcu, imperdiet elementum elit ligula eget lectus. Proin venenatis
+                        risus vitae mauris aliquet, vitae faucibus leo blandit. Maecenas
+                        eleifend magna non massa gravidafacilisis vitae quis tellus.
+                    </p>
+                </div>
+            </div>
+            <div class="rightBoard">
+                <div style="background-color: #a3864b;"></div>
+                <div style="background-color: #5e4c26;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Project" class="Project">
+        <h2>PROJETO</h2>
+        <div class="main-carousel">
+            <div class="carousel-cell">
+                <img src="assets/Images/gallery-1.jpg" alt="image1">    
+            </div>
+            <div class="carousel-cell">
+                <img src="assets/Images/gallery-2.jpg" alt="image1"> 
+            </div>
+            <div class="carousel-cell">
+                <img src="assets/Images/video.jpg" alt="image1"> 
+            </div>
+        </div>
+
+        <h1>MAURIS LUCTUS<br>NISIUTEGESTS</h1>
+        <span>Etiam pulvinar, est nec feugiat<br>
+            gravida, nibh purus </span>
+    </div>
+    <div id="video" class="video">
+        <h2>VIDEO</h2>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    </div>
+    <div id="Location" class="location">
+        <h2>LOCALIZAÇÃO</h2>
+        <div id="map"></div>
+    </div>
+    <div id="contact" class="contact"> 
+        <h2>Pellentesque luctus<br>
+            scelerisque placerat</h2>
+        <form action="#Home">
+            <input id="name" placeholder="Nome" type="text">
+            <input id="email" placeholder="E-mail" type="text">
+            <input id="telephone" placeholder="Telefone" type="text">
+            <input id="message" placeholder="Mensagem" type="text">
+            <button class="hvr-grow">ENVIAR</button>
+        </form>
+    </div>
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="assets/js/landapge.js"> </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACxX8FA89wrWGJ0d29te-i7r-FhfOXNw4&callback=initMap"
+    async defer></script>
+
+</body>
+</html>

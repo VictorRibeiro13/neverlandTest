@@ -1,0 +1,672 @@
+*{
+margin: 0%;
+padding: 0%;
+}
+
+body{
+    /* overflow-x: hidden; */
+}
+html
+{        
+    scroll-behavior: smooth;   
+}
+
+
+nav{
+    background-color: #a3864b;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+ul{
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+    margin-left: 15%;
+}
+
+ul a{
+    padding: 20px;
+    position: relative;
+    font-size: 11px;
+    color: #fff;
+    text-decoration: none; 
+    font-family: GOTHAM REGULAR;
+    letter-spacing: 1,5px;
+}
+
+ul a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #d9b46b;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+ul a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(0.7);
+    transform: scaleX(0.7);
+  }
+
+.contato{
+    color: #fff;
+    padding: 10px;
+    margin-right: 5%;
+    display: flex;
+    flex: 1;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.contato p{
+    text-align: right;
+    font-size: 14px;
+    font-family: GOTHAM BOLD;
+    letter-spacing: 1,5px;
+    position: relative;
+
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+}
+
+.comment-icon{
+    background-color: #d9b46b;
+    padding: 10px;
+    margin: 5px;
+    border: #fff;
+}
+
+.hmbgr-icon{
+    background-color: #a3864b;
+    padding: 10px;
+    margin: 5px;
+    border: #fff;
+    display: block;
+    cursor: pointer;
+}
+
+.toggle{
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    box-sizing: border-box;
+    background-color: #a3864b;
+    margin-left: auto;
+    display: none;
+    height: 100%;
+    min-height: 100%;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+    .firstContent{
+        background-color: #a3864b;
+        text-align: center;
+    }
+  
+/* HAMBURGUER */
+
+    .NavList{
+        display: flex;
+        background: black;
+        height: 80vh;
+        width: 100%;
+        flex-direction: column;
+        margin: 0%;
+        /* clip-path: circle(50px at 100% 0%);
+        -webkit-clip-path: circle(50px at 4% 4%); 
+        transition: all 3s ease; */
+        display: none; 
+    }
+
+    .webdoor{
+        height: auto;
+        width: auto;
+        max-height: 80%;
+        padding-top: 10px;
+        position: relative;
+    }
+
+
+    .titleWebDoor{
+        position: absolute;
+        text-align: left;
+        color: #fff;
+        top:45%;
+        width: 80%;
+        left: 8%;
+        font-family: GOTHAM LIGHT;
+        font-size: 48px;
+        letter-spacing: 7px;
+    }
+
+    .arrowDown{
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        bottom: 2%;
+        padding: 12px;
+        border: none;
+        left: 50%;
+        right: 50%;
+        background-color: #d9b46b;
+        cursor: pointer;
+    }
+
+    .hvr-grow {
+        display: inline-block;
+        vertical-align: middle;
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        transition-duration: 0.3s;
+        transition-property: transform;
+    }
+    
+    .hvr-grow:hover,
+    .hvr-grow:focus,
+    .hvr-grow:active
+    {
+        transform: scale(1.1);
+    }
+
+    div#Concept
+    {
+        background-color: #a3864b;
+    }
+
+    .wrapper 
+    {
+        /* padding-bottom: 15%; */
+        display: grid;
+        grid-template-columns: 60% 40%;
+        
+     }
+
+     .board
+     {
+        width: 100%;
+        color: #fff;
+        padding: 10%;
+        background-color: #7a663c;
+        min-height: 50%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+     }
+
+     .board h2
+     {
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-family: GOTHAM BOLD;
+     }
+     .contentCard
+     {
+         margin-top: 5%;
+         text-align: center;
+         display: flex;
+         flex-direction: row;
+         flex: 1;
+         width: 100%;
+     }
+     /* Big textBoard */
+     .contentCard span
+     {
+        font-family: GOTHAM LIGHT;
+        font-size: 48px;
+        letter-spacing: 7px;
+        text-align: left;
+     }
+     /* description board */
+     .contentCard p
+     {
+         text-align: left;
+         margin-left: 10%;
+         margin-right: auto;
+         font-family: GOTHAM BOOK;
+         font-size: 18px;
+         letter-spacing: 1.2px;
+         max-width: 40%;
+         padding-top: 3%;
+         padding-bottom: auto;
+     }
+
+     .rightBoard
+     {
+        margin-top: 10%;
+        min-height: 50%;
+        width: 100%;
+        display: grid;
+        grid-row: 50% 50%;
+        grid-auto-flow: row dense;
+        /* position: relative; */
+
+     }
+
+     .Project{
+        background-color: #5e4c26;
+        min-height: 450px;
+        padding-top: 2%;
+        padding-bottom: 8%;
+     }
+
+    .Project h2
+    {   
+        padding: 4%;
+        padding-left: 6.5%;
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-family: GOTHAM BOLD;
+    }
+
+
+    .Project h1
+    {   
+        position: absolute;
+        color: #fff;
+        left: 10%;
+        top: 220%;
+        font-family: GOTHAM LIGHT;
+        font-size: 48px;
+        letter-spacing: 7px;
+        text-align: left;
+    }
+
+    .Project span
+    {
+        position: absolute;
+        color: #fff;
+        left: 15%;
+        top: 235%;
+        font-family: GOTHAM LIGHT;
+        font-size: 22px;
+        letter-spacing: 7px;
+        text-align: left;
+    }
+
+    .video
+    {
+        background-color: #fff;
+        text-align: center;
+        width: 100%;
+        min-height: 450px;
+
+    }
+
+    .video h2
+    {
+        text-align: left;
+        padding: 4%;
+        padding-top: 6%;
+        padding-bottom: 2%;
+        padding-left: 10%;
+        color: black;
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-family: GOTHAM BOLD;
+    }
+
+    .video iframe
+    {
+        height: 700px;
+        width: 80%;
+        position: relative;
+        margin-bottom: 5%;
+    }
+
+    .location
+    {
+        min-height: 80%;
+        width: 100%;
+        background-color: #202121;
+        padding-bottom: 10%;
+        padding-top: 2%;
+        text-align: center;
+
+    }
+
+    .location h2 
+    {
+        text-align: left;
+        padding: 4%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 10%;
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-family: GOTHAM BOLD;
+    }
+
+    #map {
+        height: 700px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .contact
+    {   
+        /* background-color: white; */
+        background-color: #181818;
+        min-height: 80%;
+        padding: 10%;
+        text-align: center;
+    }
+
+    .contact h2{
+        font-family: GOTHAM LIGHT;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 5%;
+    }
+
+    .contact form{
+        display: flex;
+        flex-direction: column; 
+        
+
+    }
+
+    .contact form input{
+        font-family: GOTHAM LIGHT;
+        width:300px; height:40px;
+        padding:0;
+        border: 0; outline:none;
+        box-shadow: -18px 18px 0px -17px #fff, 18px 18px 0px -17px #fff;
+        text-align:center;
+        margin-top: 1%;
+        background:transparent;
+        margin-left: auto;
+        margin-right: auto;
+        color: #fff;
+    }
+
+    ::-webkit-input-placeholder 
+    {
+        color: #fff;
+        opacity: 0.5;
+        -webkit-transition: opacity 0.35s ease-in-out;
+        transition: opacity 0.35s ease-in-out;
+      }
+      :-moz-placeholder 
+      {
+        color: #fff;
+        opacity: 0.5;
+        -moz-transition: opacity 0.35s ease-in-out;
+        transition: opacity 0.35s ease-in-out;
+      }
+      
+      /* Place Holder CSS for Focus */
+      :hover::-webkit-input-placeholder 
+      {
+        opacity: 0.75;
+        -webkit-transition: opacity 0.35s ease-in-out;
+        transition: opacity 0.35s ease-in-out;
+      }
+      :hover:-moz-placeholder 
+      {
+        opacity: 0.75;
+        -moz-transition: opacity 0.35s ease-in-out;
+        transition: opacity 0.35s ease-in-out;
+      }
+      
+      /* Place Holder CSS for Focus */
+      :focus::-webkit-input-placeholder 
+      {
+        opacity: 0;
+        -webkit-transition: opacity 0.35s ease-in-out;
+        transition: opacity 0.35s ease-in-out;
+      }
+      :focus:-moz-placeholder {
+        opacity: 0;
+        -moz-transition: opacity 0.35s ease-in-out;
+        transition: opacity 0.35s ease-in-out;
+      }
+      
+
+
+    .contact form button
+    {
+        background-color: #d8b46b;
+        margin-top: 5%;
+        padding: 5%;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        font-family: GOTHAM LIGHT;
+        font-weight: bold;
+    }
+
+
+/* MOBILE */
+@media screen and (max-width: 1030px)
+{
+    ul{ margin-left: 2% }
+}
+@media screen and (max-width: 870px)
+{
+    .toggle
+    {
+        display: block; 
+    }
+
+    .contato
+    {
+        display: block;
+        margin-right: 2%;
+    }
+
+    .esconde
+    {
+        display: none;
+    }
+
+    nav-down
+    {
+        padding: 0%;
+    }
+
+    nav ul
+    {
+        display: none;
+    }
+
+    .firstContent
+    {   
+        height: 100%;
+        background-color: #a3864b;
+        text-align: center;
+        padding-bottom: 25%;
+        bottom: 0%;
+    }
+
+    .titleWebDoor
+    {
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        top: 70%;
+        width: 100%;
+        height: 100%;
+        left: auto;
+        right: auto;
+        font-family: GOTHAM LIGHT;
+        font-size: 170%;
+        letter-spacing: 7px;
+    }
+
+    .arrowDown
+    {   
+        padding: 10px;
+        position: absolute;
+        bottom: 2%;
+        right: 50%;
+        left: 50%;
+        text-align: center;    }
+    
+    .firstContent  a {
+        text-align: center; 
+        width:100%;
+    }
+    
+    .webdoor
+    {   
+        padding-top: 10px;
+        position: relative;
+        content: url(https://uploaddeimagens.com.br/images/002/537/609/original/webdoor-mobile.jpg?1584288659);
+    }
+    .wrapper 
+    {
+        grid-template-columns: 100%;
+    }
+    .board
+     {
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        margin-top: 10%;
+        text-align: center;
+        padding: 0%;
+     }
+     .board h2
+     {
+        font-size: 14px;
+        padding-top: 10%;
+     }
+     .contentCard
+     {
+         margin-top: 5%;
+         text-align: center;
+         flex-direction: column;
+         width: 100%;
+     }
+     /* Big textBoard */
+     .contentCard span
+     {  
+        padding-top: 15%;
+        font-size: 160%;
+        text-align: center;
+     }
+     /* description board */
+     .contentCard p
+     {  
+         text-align: center;
+         font-size: 80%;
+         padding: 10%;
+         position: relative;
+         margin-right: auto;
+         margin-left: auto;
+         width: auto;
+    }
+    .rightBoard
+    {
+        display: none;
+    }
+    .Project{
+        padding-top: 2%;
+        padding-bottom: 20%;
+        text-align: center;
+     }
+
+    .Project h2
+    {   
+        padding: 10%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .Project h1
+    {   
+        position: relative;
+        font-size: 160%;
+        text-align: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        left: 0%;
+    }
+
+    .Project span
+    {   
+        position: relative;
+        font-size: 100%;
+        text-align: center;
+        left: 0%;
+        padding-bottom: 10%;
+    }
+
+    .video
+    {
+        text-align: center;
+        width: 100%;
+        min-height: 450px;
+    }
+
+    .video h2
+    {
+        text-align: center;
+        padding: 10%;
+    }
+
+
+    .video iframe
+    {
+        height: 350px;
+        width: 100%;
+        position: relative;
+        margin-bottom: 5%;
+    }
+
+}
+
+
+@font-face {
+    font-family: "GOTHAM REGULAR";
+    src: url(../Fonts/Gotham-Book.otf);
+}
+
+@font-face {
+    font-family: "GOTHAM BOLD";
+    src: url(../Fonts/Gotham-Bold.otf);
+}
+
+@font-face {
+    font-family: "GOTHAM LIGHT";
+    src: url(../Fonts/Gotham-Light.otf);
+}
+
+@font-face {
+    font-family: "GOTHAM BOOK";
+    src: url(../Fonts/Gotham-Book.otf);
+}
