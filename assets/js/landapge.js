@@ -98,7 +98,7 @@ $(document).ready(() => {
 function initMap() {
     // Styles a map in night mode.
     var map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: -23.5559394, lng: -46.664353},
+      center: {lat: -23.5563873, lng: -46.6624675},
       zoom: 18,
       styles: [
         {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
@@ -181,25 +181,68 @@ function initMap() {
         }
       ]
     });
-     // MARKUPS
+     // MARKUP NEVERLAND
 
-     // neverland
-    var markerNeverland = new google.maps.Marker({
+     var contentStringNeverland = 
+     '<div style="border: none;" id="content">'+
+          '<p>FUTURE JOB</p>'
+     '</div>';
+
+      var infowindow1 = new google.maps.InfoWindow({
+        content: contentStringNeverland,
+        maxWidth: 200
+      });
+      var markerNeverland = new google.maps.Marker({
         position: {lat: -23.5563873, lng: -46.6624675},
-        title:"Future Job ?"
-    }); markerNeverland.setMap(map);
-    
-    //IMS
-    var markerIMS = new google.maps.Marker({
-        position: {lat: -23.5564114, lng: -46.6622037},
-        title:"IMS ?"
-    }); markerIMS.setMap(map);
+        title:"Future Job ?",
+        map: map,
+      }); markerNeverland.setMap(map);
 
-    //IBIS HOTEL
-    var markerIbis = new google.maps.Marker({
-        position: {lat: -23.5567, lng: -46.6621145},
-        title:"IMS ?"
-    }); markerIbis.setMap(map);
+      markerNeverland.addListener('click', () => {
+        infowindow1.open(map, markerNeverland);
+      });
+      
+    
+      // MARKUP IMS
+      var contentStringIMS = 
+     '<div style="border: none;" id="content">'+
+          '<p>IMS SP</p>'
+     '</div>';
+
+      var infowindow2 = new google.maps.InfoWindow({
+        content: contentStringIMS,
+        maxWidth: 200
+      });
+      var markerIMS = new google.maps.Marker({
+        position: {lat: -23.557838, lng: -46.659699},
+        map: map,
+      }); markerIMS.setMap(map);
+
+      markerIMS.addListener('click', () => {
+        infowindow2.open(map, markerIMS);
+      });
+
+     // MARKUP IBIS
+     var contentStringIBIS = 
+     '<div style="border: none;" id="content">'+
+          '<p>IBIS HOTEL</p>'
+     '</div>';
+
+      var infowindow3 = new google.maps.InfoWindow({
+        content: contentStringIBIS,
+        maxWidth: 200
+      });
+    
+      var markerIbis = new google.maps.Marker({
+          position: {lat: -23.556874, lng: -46.661877},
+          map: map,
+      }); markerIbis.setMap(map);
+
+      markerIbis.addListener('click', () => {
+        infowindow3.open(map, markerIbis);
+      });
+
+
 
 
   }

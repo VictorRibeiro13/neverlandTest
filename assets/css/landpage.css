@@ -374,7 +374,6 @@ ul a:hover:before {
 
     .contact
     {   
-        /* background-color: white; */
         background-color: #181818;
         min-height: 80%;
         padding: 10%;
@@ -524,7 +523,6 @@ ul a:hover:before {
     .space{
         width: 40%;
     }
-
 
 /* MOBILE */
 @media screen and (max-width: 1030px)
@@ -685,7 +683,9 @@ ul a:hover:before {
     {
         text-align: center;
         width: 100%;
-        min-height: 450px;
+        min-height: 300px;
+        margin-bottom: 0px;
+        height: auto;
     }
 
     .video h2
@@ -700,7 +700,63 @@ ul a:hover:before {
         height: 350px;
         width: 100%;
         position: relative;
-        margin-bottom: 5%;
+        margin-bottom: 0%;
+        border: none;
+    }
+
+    .location
+    {
+        min-height: 100%;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .location h2 
+    {
+        text-align: center;
+    }
+
+    #map {
+        position: relative;
+    }
+
+    .contact form textarea
+    {   
+        margin-top: 10%;
+    }
+
+    .copyright
+    {
+        margin-top:  auto;
+        margin-bottom: auto;
+        padding-left: 5%;
+        color: #fff;
+        font-family: GOTHAM BOOK;
+        font-size: 80%;
+    }
+
+    .socialMedia{
+        padding-right: 5%;
+        margin-left: auto;
+        margin-top:  auto;
+        margin-bottom: auto;
+        color: #fff;
+    }
+
+    .space{
+        width: 10%;
+    }
+
+    .flickity-button{
+        display: none;
+    }
+
+    .ytp-icon-large-play-button-hover {
+        background: no-repeat url(../assets/icons/ico.play.svg) -10px -4838px;
+        background-size: auto;
+        width: 68px;
+        height: 48px;
     }
 
 }
