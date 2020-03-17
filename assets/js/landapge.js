@@ -28,6 +28,71 @@ $(document).ready(() => {
         prevNextButtons: true,
         pageDots: false
       });
+
+
+    $("#telephone").mask("(00) 0000-0000");
+
+    toastr.options = {
+      "closeButton": false,
+      "debug": false,
+      "newestOnTop": false,
+      "progressBar": false,
+      "positionClass": "toast-top-right",
+      "preventDuplicates": false,
+      "onclick": null,
+      "showDuration": "400",
+      "hideDuration": "1000",
+      "timeOut": "5000",
+      "extendedTimeOut": "1000",
+      "showEasing": "swing",
+      "hideEasing": "linear",
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut"
+    }
+
+    $('#contactForm').on('submit', ()=>{
+        event.preventDefault();
+
+        var pass = true;
+
+        const regexEmail = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        const regexName = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
+        const regexTelephone = /(\(\d{2}\)\s)?(\d{4,5}\-\d{4})/;
+
+        if(!regexName.test($("#name").val())){
+          toastr["error"]("Nome Inválido. Tente Novamente");
+          pass = false;
+          $("#email").focus();
+        }
+
+
+        if(!regexEmail.test($('#email').val())){
+          toastr["error"]("E-mail Inválido. Tente Novamente");
+          pass = false;
+          $("#email").focus();
+        }
+
+        if(!regexTelephone.test($('#telephone').val())){
+          toastr["error"]("Telefone/Celular Inválido. Tente Novamente");
+          pass = false;
+          $("#email").focus();
+        }
+
+        
+
+        if($("#name").val() || $('#email').val() || $('#telephone').val() 
+        || $('#message').val() === ""){
+          toastr["error"]("Todos os Campos São Obrigatórios");
+          pass = false;
+        }
+
+        if(pass){
+          toastr["Success"]("Tudo Certo ;)");
+        }
+
+        
+    });
+
 });
 
 function initMap() {
@@ -138,3 +203,4 @@ function initMap() {
 
 
   }
+

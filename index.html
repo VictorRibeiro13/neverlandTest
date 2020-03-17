@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="assets/css/landpage.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/csshake.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/toastr.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <title> title </title>
@@ -93,20 +94,31 @@
     <div id="contact" class="contact"> 
         <h2>Pellentesque luctus<br>
             scelerisque placerat</h2>
-        <form action="#Home">
+        <form id="contactForm" action="#Home">
             <input id="name" placeholder="Nome" type="text">
             <input id="email" placeholder="E-mail" type="text">
             <input id="telephone" placeholder="Telefone" type="text">
-            <input id="message" placeholder="Mensagem" type="text">
-            <button class="hvr-grow">ENVIAR</button>
+            <!-- <input id="message" placeholder="Mensagem" type="text"> -->
+            <textarea id="message" placeholder="Mensagem"></textarea>
+            <button  type="submit "class="hvr-grow">ENVIAR</button>
         </form>
     </div>
-
+    <div class="footer">
+        <span class="copyright">@2020 Experimento Neverland</span>
+        <div class="space"></div>
+        <div class="socialMedia">
+            <a><img src="assets/icons/ico-twitter.svg" alt="twitter" /></a>
+            <a><img src="assets/icons/ico-pinterest.svg" alt="printeres" /></a>
+            <a><img src="assets/icons/ico-facebook.svg" alt="facebook" /></a>
+        </div>
+    </div>
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="assets/js/toastr.min.js"></script>
     <script src="assets/js/landapge.js"> </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACxX8FA89wrWGJ0d29te-i7r-FhfOXNw4&callback=initMap"
     async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
 
 </body>
 </html>

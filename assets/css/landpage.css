@@ -395,7 +395,7 @@ ul a:hover:before {
 
     }
 
-    .contact form input{
+    .contact form input, .contact form textarea{
         font-family: GOTHAM LIGHT;
         width:300px; height:40px;
         padding:0;
@@ -409,14 +409,27 @@ ul a:hover:before {
         color: #fff;
     }
 
-    ::-webkit-input-placeholder 
+    .contact form textarea
+    {   
+        box-shadow: -18px 18px 0px -17px #fff, 18px 18px 0px -17px #fff;
+        margin-top: 2%;
+        height:90px;
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 60px;
+        text-align: left;
+    }
+
+    ::-webkit-input-placeholder, ::-webkit-textarea-placeholder
     {
         color: #fff;
         opacity: 0.5;
         -webkit-transition: opacity 0.35s ease-in-out;
         transition: opacity 0.35s ease-in-out;
+        text-align: left;
+        margin-left: 10px;
       }
-      :-moz-placeholder 
+      :-moz-placeholder
       {
         color: #fff;
         opacity: 0.5;
@@ -425,7 +438,7 @@ ul a:hover:before {
       }
       
       /* Place Holder CSS for Focus */
-      :hover::-webkit-input-placeholder 
+      :hover::-webkit-input-placeholder, :hover::-webkit-textarea-placeholder
       {
         opacity: 0.75;
         -webkit-transition: opacity 0.35s ease-in-out;
@@ -439,7 +452,7 @@ ul a:hover:before {
       }
       
       /* Place Holder CSS for Focus */
-      :focus::-webkit-input-placeholder 
+      :focus::-webkit-input-placeholder,:focus::-webkit-textarea-placeholder
       {
         opacity: 0;
         -webkit-transition: opacity 0.35s ease-in-out;
@@ -468,6 +481,48 @@ ul a:hover:before {
         color: #fff;
         font-family: GOTHAM LIGHT;
         font-weight: bold;
+    }
+
+    .footer
+    {
+        width: 100%;
+        background-color: #000000;
+        border: none;
+        border-top:2px solid #fff;
+        min-height: 100px;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        
+    }
+
+    .copyright
+    {
+        margin-top:  auto;
+        margin-bottom: auto;
+        padding-left: 5%;
+        color: #fff;
+        font-family: GOTHAM BOOK;
+        font-size: 100%;
+    }
+
+    .socialMedia{
+        padding-right: 5%;
+        margin-left: auto;
+        margin-top:  auto;
+        margin-bottom: auto;
+        color: #fff;
+    }
+
+    .contactForm
+    {
+        margin-left: auto;
+        margin-right: 5%;
+        color: #fff;
+    }
+
+    .space{
+        width: 40%;
     }
 
 
