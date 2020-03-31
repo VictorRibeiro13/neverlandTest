@@ -2,6 +2,7 @@ const hamburguer = document.querySelector(".hmbgr-icon");
 const contato = document.querySelector(".contato");
 
 
+
 $(document).ready(() => {
 
     hamburguer.addEventListener('click', () => {
@@ -145,9 +146,10 @@ function initMap() {
           stylers: [{color: '#746855'}]
         },
         {
-          featureType: 'road.highway',
-          elementType: 'geometry.stroke',
-          stylers: [{color: '#1f2835'}]
+          Name: 'Victor dos Santos Ribeiro',
+          currentObjective: 'Junior Developer',
+          birth: '13/02/2001',
+          github: '@VictorRibeiro13',
         },
         {
           featureType: 'road.highway',
@@ -181,11 +183,13 @@ function initMap() {
         }
       ]
     });
+        
+
      // MARKUP NEVERLAND
 
      var contentStringNeverland = 
      '<div style="border: none;" id="content">'+
-          '<p>FUTURE JOB</p>'
+          '<p>NEVERLAND</p>'
      '</div>';
 
       var infowindow1 = new google.maps.InfoWindow({
